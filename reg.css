@@ -113,15 +113,62 @@ input, select {
     background-color: rgb(177, 148, 114);
 }
 
-@media (max-width: 500px) {
+/* --- PERFECT PHONE SIZE OVERRIDES --- */
+@media (max-width: 600px) {
+    body {
+        display: block; /* Removes flex so content stacks vertically */
+        padding: 0;
+        margin: 0;
+        background-attachment: fixed;
+    }
 
     .sidebar {
-        display: none;
+        display: none; /* Hides sidebar on phone as per your design */
     }
-    
+
+    .content {
+        width: 100% !important;
+        margin: 0 !important; /* Removes the 20px gap around the edges */
+        padding: 30px 15px !important;
+        border-radius: 0; /* Makes it feel like a full-screen app */
+        min-height: 100vh;
+        background: rgba(26, 11, 26, 0.95); /* Dark purple theme like your screens */
+    }
+
+    .section-title {
+        font-size: 24px;
+        text-align: left;
+        margin-bottom: 20px;
+    }
 
     .form {
-        width: 20%;
-        display: grid;
+        width: 100% !important; /* FIX: Changed from 20% to 100% */
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .form-row {
+        flex-direction: column; /* Stacks "First Name" and "Last Name" */
+        gap: 15px;
+    }
+
+    .form-group {
+        width: 100%;
+    }
+
+    input, select {
+        width: 100% !important;
+        padding: 14px 10px !important; /* Larger touch area for fingers */
+        font-size: 16px !important; /* Prevents auto-zoom on iPhone */
+        background: #f0f0f0;
+        color: #333;
+        border-radius: 8px;
+    }
+
+    .sign-btn {
+        width: 100%; /* Full width button for easy tapping */
+        margin-top: 20px;
+        padding: 16px;
     }
 }

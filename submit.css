@@ -70,7 +70,39 @@ body {
 }
 
 .resend-link a {
-    color: #f69420; /* Highlighted link color */
+    color: #f69420; 
     text-decoration: none;
     font-weight: bold;
+}
+
+
+@media screen and (max-width: 600px) {
+    body {
+        display: block;
+        padding: 15px;
+        margin: 0;
+    }
+
+    .verify-box {
+        width: 100% !important; 
+        max-width: 100% !important;
+        margin: 40px 0 !important; 
+        padding: 30px 20px !important; 
+        box-sizing: border-box; 
+    }
+
+    .verify-box h1 {
+        font-size: 24px;
+    }
+
+    #otpCode {
+        font-size: 18px !important;
+        padding: 12px 0 !important;
+        letter-spacing: 3px;
+    }
+
+    .verify-button {
+        padding: 15px !important; 
+        font-size: 18px;
+    }
 }
