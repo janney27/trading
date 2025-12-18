@@ -1,0 +1,158 @@
+body {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    min-height: 100vh; 
+    margin: 0;
+    padding: 20px;
+    background-image: url(img/img7.webp);
+}
+
+
+.transfer-container {
+    background: #130110c2;
+    padding: 40px;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); 
+    width: 100%;
+    max-width: 480px;
+    box-sizing: border-box;
+    border: 3px solid #09948d;
+}
+
+h1 {
+    color: #96009b; 
+    text-align: center;
+    margin-bottom: 35px;
+    font-weight: 600;
+    font-size: 2em;
+}
+
+/* Form Group & Labels */
+.form-group {
+    margin-bottom: 25px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #8d8d8d;
+    font-size: 0.95em;
+}
+
+.input-hint {
+    display: block;
+    margin-top: 5px;
+    font-size: 0.85em;
+    color: #91218b;
+}
+
+/* Input/Select Styling */
+.transfer-form input[type="text"],
+.transfer-form input[type="number"],
+.transfer-form select {
+    width: 100%;
+    padding: 14px 12px;
+    border: 2px solid #06afa7;
+    border-radius: 8px;
+    box-sizing: border-box;
+    font-size: 1em;
+    color: #070707;
+    transition: all 0.3s ease;
+}
+
+/* Enhanced Focus State */
+.transfer-form input:focus,
+.transfer-form select:focus {
+    border-color: #17a2b8;
+    box-shadow: 0 0 0 4px rgba(23, 162, 184, 0.2);
+    outline: none;
+    background-color: #f8f9fa; 
+}
+
+/* Button Styling */
+.submit-btn {
+    position: relative;
+    width: 100%;
+    padding: 16px;
+    background-color: #28a745; 
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.15em;
+    font-weight: 700;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s, box-shadow 0.2s;
+    overflow: hidden; 
+}
+
+.submit-btn:hover:not(:disabled) {
+    background-color: #218838;
+    box-shadow: 0 5px 15px rgba(40, 167, 69, 0.3);
+}
+
+.submit-btn:disabled {
+    background-color: #95d2a6; 
+    cursor: not-allowed;
+}
+
+/* Alert Box Styling for Messages */
+.alert-box {
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    font-weight: 600;
+    display: none; 
+}
+
+.alert-box.success {
+    background-color: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+}
+
+.alert-box.error {
+    background-color: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+}
+
+/* Spinner Animation (for loading state) */
+.spinner {
+    display: none;
+    border: 3px solid rgba(255, 255, 255, 0.3);
+    border-top: 3px solid #fff;
+    border-radius: 50%;
+    width: 18px;
+    height: 18px;
+    animation: spin 1s linear infinite;
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.submit-btn.loading .btn-text {
+    visibility: hidden; 
+}
+
+.submit-btn.loading .spinner {
+    display: inline-block;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+    .transfer-container {
+        padding: 25px;
+        margin-top: 0;
+        box-shadow: none;
+        border-radius: 0;
+    }
+}

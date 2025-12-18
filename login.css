@@ -1,0 +1,208 @@
+
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    background-image: url(img/img7.webp);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    color: white;
+}
+
+.login-box {
+    background-color: rgba(7, 4, 7, 0.664); 
+    padding: 40px;
+    border-radius: 8px;
+    border: 2px solid rgb(0, 128, 128);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    width: 100%;
+    max-width: 400px; 
+    text-align: center;
+}
+
+/* Logo and Header */
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.logo span {
+    margin-left: 10px;
+}
+
+h1 {
+    font-size: 32px;
+    margin-bottom: 40px;
+    font-weight: 300;
+}
+
+/* Input Fields */
+.input-group {
+    margin-bottom: 15px;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 15px 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: rgba(255, 255, 255, 0.2); /* Semi-transparent white for input fields */
+    color: white;
+    font-size: 16px;
+    box-sizing: border-box; /* Include padding in the element's total width and height */
+}
+
+.input-group input::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+/* Forgot Password and Sign In Button Layout */
+.forgot-and-signin {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.forgot-password {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    padding: 10px 0; /* Add padding for a bigger click area */
+}
+
+.sign-in-button {
+    background-color: white;
+    color: #0b4f88; /* Blue text color */
+    border: none;
+    padding: 8px 1px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    min-width: 100px;
+    text-decoration: none;
+    transition: background-color 0.2s;
+}
+
+
+.sign-in-button:hover {
+    background-color: #e0e0e0;
+}
+
+/* Social Login Buttons */
+.social-login {
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+.social-button {
+    flex: 1;
+    padding: 12px 5px;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    cursor: pointer;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    transition: opacity 0.2s;
+}
+
+.social-button:hover {
+    opacity: 1.0;
+}
+
+.social-button i {
+    font-size: 16px;
+}
+
+.facebook {
+    background-color: #3b5998;
+}
+
+.google {
+    background-color: #f69420; /* Orange color from the image */
+}
+
+.apple {
+    background-color: #000000;
+} 
+
+.social-login a{
+    text-decoration: none;
+}
+
+/* Register Link */
+.register-link a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    border-bottom: 1px solid transparent;
+    transition: border-bottom 0.2s;
+}
+
+.register-link a:hover {
+    border-bottom: 1px solid white;
+}
+
+.main-footer {
+    width: 100%;
+    padding: 20px 0px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.685); 
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    margin-top: 50px; 
+}
+
+
+
+.footer-links a {
+    color: rgba(255, 255, 255, 0.7); 
+    text-decoration: none;
+    font-size: 13px;
+    margin: 0 15px;
+    transition: color 0.2s;
+}
+
+.footer-links a:hover {
+    color: white; 
+}
+
+.copyright-text {
+    color: rgba(216, 211, 211, 0.5); 
+    font-size: 12px;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    flex-grow: 1; 
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+     .login-box {
+        width: 350px;
+        margin-left: 8px;
+     }
+}

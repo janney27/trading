@@ -1,0 +1,127 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(black 0%,rgb(3, 3, 99) 70%,rgb(56, 1, 56) 100%);
+    display: flex;
+    color: #dfdada;
+}
+
+
+.sidebar {
+    margin-top: 10px;
+    width: 240px;
+    background: rgba(78, 78, 78, 0.4);
+    height: 120vh;
+    padding: 20px;
+    backdrop-filter: blur(10px);
+}
+
+.sidebar-title {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.menu {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+.menu li {
+    padding: 10px 0;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.menu li.active {
+    color: rgb(158, 4, 158);
+    font-weight: bold;
+}
+
+.menu li:hover {
+    color: bisque;
+}
+
+.submenu {
+    padding-left: 15px;
+}
+
+.submenu li.active {
+    background: rgba(180, 140, 255, 0.2);
+    padding: 6px;
+    border-radius: 8px;
+}
+
+
+.content {
+    flex: 1;
+    padding: 40px;
+    background: rgba(95, 91, 91, 0.5);
+    backdrop-filter: blur(10px);
+    margin: 20px;
+    border-radius: 20px;
+}
+
+.section-title {
+    font-size: 28px;
+    margin-bottom: 25px;
+}
+
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-row {
+    display: flex;
+    gap: 20px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+label {
+    font-size: 13px;
+    margin-bottom: 5px;
+}
+
+input, select {
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+}
+
+.next {  
+ margin-top: 50px;   
+}
+
+.sign-btn {
+    background: rgb(194, 8, 147);
+    padding: 15px 40px;
+    border-radius: 10px;
+    font-weight: bold;
+    color: whitesmoke;
+}
+
+.sign-btn:hover {
+    background-color: rgb(177, 148, 114);
+}
+
+@media (max-width: 500px) {
+
+    .sidebar {
+        display: none;
+    }
+    
+
+    .form {
+        width: 20%;
+        display: grid;
+    }
+}

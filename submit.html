@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verify Code</title>
+    <link rel="stylesheet" href="submit.css">
+</head>
+<body>
+    <div class="container">
+        <div class="verify-box">
+            <h1>Verify Code</h1>
+            <p>A 6-digit code has been sent to your email or phone number.</p>
+
+            <form id="verificationForm" action="#" method="POST">
+                <div class="code-input-group">
+                    <input type="tex" id="otpCode" name="otpCode" 
+                           placeholder="Enter 6-digit code" maxlength="6" 
+                           required pattern="[0-9]{6}">
+                </div>
+                
+                <button type="submit" class="verify-button">Verify</button>
+            </form>
+
+            <div class="resend-link">
+                <p>Didn't receive the code?</p>
+                <a href="#" id="resendCode">Resend Code</a>
+            </div>
+        </div>
+    </div>
+
+    <script>
+const correctOTP = "123456"; 
+
+document.getElementById("verificationForm").addEventListener("submit", function (e) {
+    e.preventDefault(); 
+
+    const enteredOTP = document.getElementById("otpCode").value.trim();
+
+    if (enteredOTP === correctOTP) {
+        alert("Verification successful!");
+        
+        // redirect to HOME
+        window.location.href = "index.html"; 
+    } else {
+        alert("Invalid verification code");
+    }
+});
+</script>
+    </body>
+</html>

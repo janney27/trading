@@ -1,0 +1,199 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #01070e;
+    color: #a0a0a0;
+}
+
+
+.navbar {
+    background-color: #59025c; 
+    color: white;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar h2 {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 0.95rem;
+}
+
+.nav-links a:hover {
+    text-decoration: underline;
+}
+
+/* 3. Main Container */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.page-title {
+    text-align: center;
+    margin-bottom: 2.5rem;
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+
+.grid-layout {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr 1fr;
+    gap: 2rem;
+    align-items: start;
+}
+
+
+h3 {
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+
+
+.news-list {
+    list-style: none;
+    margin-bottom: 2rem;
+}
+
+.news-list li {
+    margin-bottom: 0.8rem;
+    display: flex;
+    align-items: center;
+}
+
+.news-list li::before {
+    content: "•";
+    color: #e90dfd;
+    font-size: 1.5rem;
+    margin-right: 0.5rem;
+    line-height: 0;
+}
+
+.trader-profile {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 10px;
+    background-color: #9e9a9a;
+}
+
+/* Middle Column: Discussions */
+.discussion-card {
+    background: rgb(116, 113, 113);
+    color: black;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    margin-bottom: 1rem;
+    border: 1px solid #eee;
+    transition: transform 0.2s;
+}
+
+.discussion-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(173, 8, 146, 0.1);
+}
+
+.discussion-title {
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+    display: block;
+}
+
+.reply-count {
+    font-size: 0.85rem;
+    color: #302e2e;
+}
+
+
+.chat-container {
+    background: rgb(172, 155, 155);
+    border-radius: 8px;
+    border: 1px solid #eee;
+    display: flex;
+    flex-direction: column;
+    height: 400px; 
+}
+
+.chat-messages {
+    flex: 1;
+    padding: 1rem;
+    overflow-y: auto;
+    scrollbar-width: thin; 
+}
+
+.message-item {
+    display: flex;
+    margin-bottom: 1rem;
+}
+
+.message-content h4 {
+    font-size: 0.9rem;
+    margin-bottom: 2px;
+}
+
+.message-content p {
+    font-size: 0.85rem;
+    color: #000000;
+}
+
+.chat-input-area {
+    padding: 1rem;
+    border-top: 1px solid #eee;
+    display: flex;
+    gap: 10px;
+}
+
+.chat-input-area input {
+    flex: 1;
+    padding: 8px 12px;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    outline: none;
+}
+
+.send-btn {
+    background: #e9ecef;
+    border: none;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    cursor: pointer;
+    color: #0d6efd;
+    font-weight: bold;
+}
+
+/* --- Mobile Responsiveness --- */
+@media (max-width: 768px) {
+    .grid-layout {
+        grid-template-columns: 1fr;
+    }
+    .navbar {
+        flex-direction: column;
+        gap: 10px;
+    }
+}

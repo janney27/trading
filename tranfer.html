@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enhanced Fund Transfer</title>
+    <link rel="stylesheet" href="tranfer.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="transfer-container">
+        <h1>💳 Secure Fund Transfer</h1>
+        
+        <div id="message-area" class="alert-box"></div> 
+        
+        <form class="transfer-form" id="transferForm">
+            <div class="form-group">
+                <label for="from-account">From Account:</label>
+                <select id="from-account" name="from-account" required>
+                    <option value="" disabled selected>Select sending account</option>
+                    <option value="1234567890" data-balance="1500.00">Checking (Balance: $5,000.00)</option>
+                    <option value="0987654321" data-balance="5250.50">Savings (Balance: $10,250.50)</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="recipient-name">Recipient Name:</label>
+                <input type="text" id="recipient-name" name="recipient-name" placeholder="Name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="recipient-account">Recipient Account Number:</label>
+                <input type="text" id="recipient-account" name="recipient-account" placeholder="Enter 10-digit account number" pattern="\d{10}" title="Account number must be 10 digits" required>
+                <small class="input-hint">Must be 10 digits.</small>
+            </div>
+
+            <div class="form-group">
+                <label for="amount">Amount (USD):</label>
+                <input type="number" id="amount" name="amount" placeholder="Minimum $1.00" min="1.00" step="0.01" required>
+                <small class="input-hint" id="balance-hint">Current balance: $0.00</small>
+            </div>
+
+            <div class="form-group">
+                <label for="notes">Notes/Reference:</label>
+                <input type="text" id="notes" name="notes" placeholder="Optional transfer reference">
+            </div>
+
+            <button type="submit" class="submit-btn" id="submitBtn">
+                <span class="btn-text">Transfer Funds</span>
+                <span class="spinner"></span>
+            </button>
+        </form>
+    </div>
+
+
+</body>
+</html>

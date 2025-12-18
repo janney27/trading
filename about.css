@@ -1,0 +1,102 @@
+body{
+            background-image: url(img/tradev.jpg);
+            background-size: cover;
+
+        }
+
+
+       h1{
+            text-align: center;
+            color: antiquewhite;
+        }
+        .mother  {
+            background: linear-gradient(rgba(128, 38, 113, 0.685), silver);
+            border: 2px solid black;
+            border-radius: 10px;
+            width: fit-content;
+            height: fit-content;
+            font-size: larger;
+            font: 1em sans-serif;
+            font-weight: 700;
+            padding:20px;
+            margin-top: 0.2rem;
+            margin-bottom: 0.2rem;
+        }
+
+        .mother h5 {
+            font-size: x-large;
+        }
+
+     
+
+
+.footer-links-container {
+    background: #020202bb;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin: 0 auto 30px; 
+    margin-top: 80px;
+    padding: 40px 20px 10px;
+    padding-bottom: 20px;
+    border-radius: 0 0 20px;
+    border-bottom: 1px solid #eee;
+}
+
+.footer-column {
+    width: 30%; 
+}
+
+.footer-column h3 {
+    font-size: 1.1em;
+    font-weight: bold;
+    color: #69044b;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+.footer-column li {
+    margin-bottom: 8px;
+}
+
+.footer-column a {
+    text-decoration: none;
+    color: #555;
+    transition: color 0.2s;
+}
+
+.footer-column a:hover {
+    color: #ac0fa4; 
+}
+
+
+.social-links .icon {
+    font-family: 'Arial Black', sans-serif; 
+    margin-right: 5px;
+}
+
+.copyright-bar {
+    color: #696969;
+    text-align: center;
+    background-color: #000000c2;
+    padding: 20px;
+}
+     
+
+.disclosures-bar {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    background: rgba(0, 0, 0, 0.747);
+    color: antiquewhite;
+}
+
+.disclosures-bar a{
+    text-decoration: none;
+    color: #646161;
+    padding: 20px;
+}
