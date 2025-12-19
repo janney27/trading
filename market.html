@@ -2,204 +2,225 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Crypton | Live Trading Chart - Markets</title>
-    <link rel="stylesheet" href="mart.css"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bybit Market Dashboard</title>
+    <link rel="stylesheet" href="mart.css">
 </head>
 <body>
 
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-</head>
-    <div class="main-container">
+    <header class="top-nav">
+        <div class="logo">CRYP<span>TO</span>N</div>
+        <div class="nav-right">
+            <a href="tranfer.html"><button class="deposit-btn">Deposit</button></a>
+            <div class="user-avatar"><a href="login.html">👤</a></div>
+            <span class="icon">☰</span>
+        </div>
+    </header>
 
-        <header class="navbar">
-            <div class="logo">CRYPTON</div>
-            <nav>
-                <a href="tranfer.html">Buy Crypto</a>
-                <a href="tranfer.html">Markets</a>
-                <a href="tranfer.html">Trade</a>
-                <a href="#">Derivatives</a>
-                <a href="#">Earn</a>
-                <a href="#">Finance</a>
-            </nav>
-            <div class="user-actions">
-                <a href="tranfer.html"><button class="deposit-btn">Deposit</button></a>
-                <button class="orders-btn">Orders</button>
-            </div>
-        </header>
+    <nav class="main-tabs">
+        <button class="tab active">Overview</button>
+        <a href="keymet.html"><button class="tab">Key Metrics</button></a>
+        <button class="tab">Contract Data</button>
+    </nav>
 
-        <main class="market-dashboard">
-            
-            <div class="tab-navigation">
-                <a href="#" class="active">Overview</a>
-                <a href="#">Key Metrics</a>
-                <a href="#">Contract Data</a>
-            </div>
+    <section class="market-header">
+        <h1>Markets</h1>
+        <div class="search-container">
+            <input type="text" placeholder="Search" class="search-input">
+        </div>
+    </section>
 
-            <div class="widgets-container">
-                
-                <section class="widget market-sentiment">
-                    <h3>Market Sentiment</h3>
-                    <div class="sentiment-gauge">
-                        <span class="fear-level">22</span>
-                        <span class="label">Fear</span>
-                    </div>
-                    <div class="sentiment-breakdown">
-                        <div class="long">Long *48.60%*</div>
-                        <div class="short">Short *52.40%*</div>
-                    </div>
-                </section>
-
-                <section class="widget market-data">
-                    <h3>Market Data</h3>
-                    <p>Current ETH Gas Price: *0.0125ETH = 0.00 USD*</p>
-                    <p>Trading Vol (24H): *$84.80M*</p>
-                    <p>Open Interest: *$5.12B*</p>
-                    <button class="view-more-btn">View More</button>
-                </section>
-
-                <section class="widget trending-sectors">
-                    <h3>Trending Sectors</h3>
-                    <ul>
-                        <li>Gaming (GameFi): *8.64%*</li>
-                        <li>Metaverse: *7.50%*</li>
-                        <li>Zero Knowledge: *7.20%*</li>
-                        <li>DCG Portfolio: *7.10%*</li>
-                    </ul>
-                </section>
-                
-            </div>
-
-            <section class="markets-tables">
-                
-                <div class="market-tabs">
-                    <button class="active">Favorites</button>
-                    <button>Spot</button>
-                    <button>Derivatives</button>
-                    <button>Newly Listed</button>
-                    <button>Trending</button>
-                </div>
-                
-                <div class="trading-pair-list">
-                    <h3>Top Gainers</h3>
-                    <table>
-                        <thead>
-                            <tr>
-                                <th>Name</th>
-                                <th>Last Traded Price</th>
-                                <th>24H Change %</th>
-                                <th>24H Volume</th>
-                                <th>Action</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr class="pair-row">
-                                <td class="name-col">WETH/USDT</td>
-                                <td>946.40</td>
-                                <td class="positive">+0.68%</td>
-                                <td>244.75M USDT</td>
-                                <td><button class="trade-btn">Trade</button></td>
-                            </tr>
-                             <tr class="pair-row">
-                                <td class="name-col">BTC/USDT</td>
-                                <td>64,599.00</td>
-                                <td class="positive">+0.93%</td>
-                                <td>944.20M USDT</td>
-                                <td><button class="trade-btn">Trade</button></td>
-                            </tr>
-                             <tr class="pair-row">
-                                <td class="name-col">SOL/USDT</td>
-                                <td>153.30</td>
-                                <td class="negative">-1.44%</td>
-                                <td>337.89M USDT</td>
-                                <td><button class="trade-btn">Trade</button></td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-
-                <div class="trading-pair-list">
-                    <h3>Top Losers</h3>
-                    <table>
-                        <thead>
-                            <tr>
-                                <th>Name</th>
-                                <th>Last Traded Price</th>
-                                <th>24H Change %</th>
-                                <th>24H Volume</th>
-                                <th>Action</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr class="pair-row">
-                                <td class="name-col">DOGE/USDT</td>
-                                <td>0.151</td>
-                                <td class="negative">-5.18%</td>
-                                <td>22.39M USDT</td>
-                                <td><button class="trade-btn">Trade</button></td>
-                            </tr>
-                             <tr class="pair-row">
-                                <td class="name-col">ADA/USDT</td>
-                                <td>0.470</td>
-                                <td class="negative">-4.66%</td>
-                                <td>19.82M USDT</td>
-                                <td><button class="trade-btn">Trade</button></td>
-                            </tr>
-                             <tr class="pair-row">
-                                <td class="name-col">LTC/USDT</td>
-                                <td>78.44</td>
-                                <td class="negative">-3.01%</td>
-                                <td>15.94M USDT</td>
-                                <td><button class="trade-btn">Trade</button></td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-
-                <hr>
-
-                <div class="trading-pair-list">
-                    <h3>Newly Listed</h3>
-                    <table>
-                        <thead>
-                            <tr>
-                                <th>Name</th>
-                                <th>Last Traded Price</th>
-                                <th>24H Change %</th>
-                                <th>24H Volume</th>
-                                <th>Action</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr class="pair-row">
-                                <td class="name-col">XAI/USDT</td>
-                                <td>0.890</td>
-                                <td class="positive">+12.4%</td>
-                                <td>38.12M USDT</td>
-                                <td><button class="trade-btn">Trade</button></td>
-                            </tr>
-                             <tr class="pair-row">
-                                <td class="name-col">TIA/USDT</td>
-                                <td>12.50</td>
-                                <td class="positive">+2.05%</td>
-                                <td>55.90M USDT</td>
-                                <td><button class="trade-btn">Trade</button></td>
-                            </tr>
-                             <tr class="pair-row">
-                                <td class="name-col">BONK/USDT</td>
-                                <td>0.000021</td>
-                                <td class="negative">-0.55%</td>
-                                <td>90.22M USDT</td>
-                                <td><button class="trade-btn">Trade</button></td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-
-            </section>
-            
-        </main>
-
+    <div class="market-types">
+        <button class="type-btn">Favorites</button>
+        <button class="type-btn active">Spot</button>
+        <button class="type-btn">Derivatives</button>
     </div>
+
+    <div class="currency-nav">
+        <button class="curr-btn active">All</button>
+        <button class="curr-btn">USDT</button>
+        <button class="curr-btn">USDC</button>
+        <button class="curr-btn">USDE</button>
+        <button class="curr-btn">MNT</button>
+        <button class="curr-btn">USD1</button>
+    </div>
+
+    <div class="chip-row">
+        <button class="chip active">All</button>
+        <button class="chip">xStocks</button>
+        <button class="chip">0 Fees</button>
+        <button class="chip">Margin Trading</button>
+    </div>
+
+    <div class="table-labels">
+        <span>Trading Pairs</span>
+        <span>Traded Price/24H Change % ↕</span>
+    </div>
+
+    <main class="coin-list">
+        <div class="coin-row">
+            <div class="coin-left">
+                <span class="star">★</span>
+                <div class="coin-icon btc">₿</div>
+                <div class="coin-name">
+                    <strong>BTC</strong><span class="pair">/USDT</span>
+                    <span class="leverage-tag">10X</span>
+                </div>
+            </div>
+            <div class="coin-right">
+                <div class="price">87,024.2</div>
+                <div class="change up">+0.64%</div>
+            </div>
+        </div>
+
+        <div class="coin-row">
+            <div class="coin-left">
+                <span class="star">★</span>
+                <div class="coin-icon generic">N</div>
+                <div class="coin-name">
+                    <strong>NIGHT</strong><span class="pair">/USDT</span>
+                </div>
+            </div>
+            <div class="coin-right">
+                <div class="price">0.06321</div>
+                <div class="change down">-1.77%</div>
+            </div>
+        </div>
+
+        <div class="coin-row">
+            <div class="coin-left">
+                <span class="star active">★</span>
+                <div class="coin-icon eth">Ξ</div>
+                <div class="coin-name">
+                    <strong>ETH</strong><span class="pair">/USDT</span>
+                    <span class="leverage-tag">10X</span>
+                </div>
+            </div>
+            <div class="coin-right">
+                <div class="price">2,923.52</div>
+                <div class="change up">+3.38%</div>
+            </div>
+        </div>
+
+        <div class="coin-row">
+            <div class="coin-left">
+                <span class="star">★</span>
+                <div class="coin-icon aave">A</div>
+                <div class="coin-name">
+                    <strong>AAVE</strong><span class="pair">/USDT</span>
+                    <span class="leverage-tag">10X</span>
+                </div>
+            </div>
+            <div class="coin-right">
+                <div class="price">178.81</div>
+                <div class="change up">+1.21%</div>
+            </div>
+        </div>
+
+        <div class="coin-row">
+            <div class="coin-left">
+                <span class="star">★</span>
+                <div class="coin-icon doge">Ð</div>
+                <div class="coin-name">
+                    <strong>DOGE</strong><span class="pair">/USDT</span>
+                    <span class="leverage-tag">10X</span>
+                </div>
+            </div>
+            <div class="coin-right">
+                <div class="price">0.12574</div>
+                <div class="change up">+0.82%</div>
+            </div>
+        </div>
+
+        <div class="coin-row">
+            <div class="coin-left">
+                <span class="star">★</span>
+                <div class="coin-icon mon">M</div>
+                <div class="coin-name">
+                    <strong>MON</strong><span class="pair">/USDT</span>
+                </div>
+            </div>
+            <div class="coin-right">
+                <div class="price">0.01759</div>
+                <div class="change down">-3.09%</div>
+            </div>
+        </div>
+
+        <div class="coin-row">
+            <div class="coin-left">
+                <span class="star">★</span>
+                <div class="coin-icon bnb">B</div>
+                <div class="coin-name">
+                    <strong>BNB</strong><span class="pair">/USDT</span>
+                    <span class="leverage-tag">10X</span>
+                </div>
+            </div>
+            <div class="coin-right">
+                <div class="price">839.7</div>
+                <div class="change up">+0.77%</div>
+            </div>
+        </div>
+
+        <div class="coin-row">
+            <div class="coin-left">
+                <span class="star">★</span>
+                <div class="coin-icon sui">S</div>
+                <div class="coin-name">
+                    <strong>SUI</strong><span class="pair">/USDT</span>
+                    <span class="leverage-tag">10X</span>
+                </div>
+            </div>
+            <div class="coin-right">
+                <div class="price">1.3889</div>
+                <div class="change down">-0.59%</div>
+            </div>
+        </div>
+
+        <div class="coin-row">
+            <div class="coin-left">
+                <span class="star">★</span>
+                <div class="coin-icon usdt">₮</div>
+                <div class="coin-name">
+                    <strong>USDT</strong><span class="pair">/BRL</span>
+                </div>
+            </div>
+            <div class="coin-right">
+                <div class="price">5.526</div>
+                <div class="change down">-0.05%</div>
+            </div>
+        </div>
+
+        <div class="coin-row">
+            <div class="coin-left">
+                <span class="star">★</span>
+                <div class="coin-icon generic">E</div>
+                <div class="coin-name">
+                    <strong>ENA</strong><span class="pair">/USDT</span>
+                    <span class="leverage-tag">10X</span>
+                </div>
+            </div>
+            <div class="coin-right">
+                <div class="price">0.2018</div>
+                <div class="change up">+0.30%</div>
+            </div>
+        </div>
+
+        <div class="coin-row">
+            <div class="coin-left">
+                <span class="star">★</span>
+                <div class="coin-icon usde">S</div>
+                <div class="coin-name">
+                    <strong>USDE</strong><span class="pair">/USDT</span>
+                    <span class="leverage-tag">10X</span>
+                    <span class="fees-tag">0 fees</span>
+                </div>
+            </div>
+            <div class="coin-right">
+                <div class="price">0.9994</div>
+                <div class="change neutral">0.00%</div>
+            </div>
+        </div>
+    </main>
 
 </body>
 </html>

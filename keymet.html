@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Crypto Dashboard</title>
+    <link rel="stylesheet" href="key.css">
+</head>
+<body>
+
+    
+    <header class="top-nav">
+        <div class="logo">CRYP<span>TO</span>N</div>
+        <div class="nav-right">
+            <a href="tranfer.html"><button class="deposit-btn">Deposit</button></a>
+            <div class="user-avatar"><a href="login.html">👤</a></div>
+            <span class="icon">☰</span>
+        </div>
+    </header>
+
+    <nav class="main-tabs">
+        <button class="tab-active">Overview</button>
+        <a href="keymet.html"><button class="tab">Key Metrics</button></a>
+        <button class="tab">Contract Data</button>
+    </nav>
+
+    <section class="market-header">
+        <h1>Markets</h1>
+        <div class="search-container">
+            <input type="text" placeholder="Search" class="search-input">
+        </div>
+    </section>
+
+        <div class="responsive-grid">
+            
+            <section class="card-section">
+                <h2 class="title">Trending Sectors</h2>
+                <div class="sectors-inner-grid">
+                    <div class="sector-card">
+                        <p class="s-label">HK Concept</p>
+                        <p class="s-value green">3.09%</p>
+                        <p class="s-asset">NEON <span class="green">7.96%</span></p>
+                    </div>
+                    <div class="sector-card">
+                        <p class="s-label">Governance</p>
+                        <p class="s-value green">1.47%</p>
+                        <p class="s-asset">YFI <span class="green">3.49%</span></p>
+                    </div>
+                    <div class="sector-card">
+                        <p class="s-label">DeFi</p>
+                        <p class="s-value green">1.24%</p>
+                        <p class="s-asset">YFI <span class="green">3.49%</span></p>
+                    </div>
+                    <div class="sector-card">
+                        <p class="s-label">Liquid Staking</p>
+                        <p class="s-value green">1.19%</p>
+                        <p class="s-asset">STETH <span class="green">3.20%</span></p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="card-section">
+                <h2 class="title">Top Movers</h2>
+                <div class="list-header">
+                    <span>Name</span>
+                    <span>Type</span>
+                    <span>24H Change</span>
+                </div>
+                <div class="list-item">
+                    <div class="name-box"><strong>ALCH</strong>/USDT<br><small>12/19 06:25</small></div>
+                    <div class="type-box">24h Gainers</div>
+                    <div class="change-box green">+24.72%</div>
+                </div>
+                <div class="list-item">
+                    <div class="name-box"><strong>ZRC</strong>/USDT<br><small>12/19 06:24</small></div>
+                    <div class="type-box">24h Gainers</div>
+                    <div class="change-box green">+30.04%</div>
+                </div>
+            </section>
+
+            <section class="card-section">
+                <div class="flex-header">
+                    <h2 class="title">Top Gainers</h2>
+                    <div class="dropdown">Spot ▾</div>
+                </div>
+                <div class="list-header">
+                    <span>Market</span>
+                    <span class="text-right">Price / 24H Change</span>
+                </div>
+                <div class="list-item">
+                    <div class="rank-name"><span class="rank gold">1</span> <strong>ZKP</strong><span class="muted">/USDT</span></div>
+                    <div class="text-right">0%</div>
+                </div>
+                <div class="list-item">
+                    <div class="rank-name"><span class="rank gold">2</span> <strong>VOOI</strong><span class="muted">/USDT</span></div>
+                    <div class="text-right">0%</div>
+                </div>
+                <div class="list-item">
+                    <div class="rank-name"><span class="rank gold">3</span> <strong>SCOR</strong><span class="muted">/USDT</span></div>
+                    <div class="text-right">0%</div>
+                </div>
+            </section>
+
+        </div>
+    </div>
+ 
+    <div class="dashboard-wrapper">
+        <header class="main-header">
+            <span>TRADING PAIRS</span>
+            <span class="header-right">TRADED PRICE/24H CHANGE %</span>
+        </header>
+
+        <div class="responsive-container">
+            <section class="rank-column">
+                <div class="column-header">
+                    <h2>Trending</h2>
+                    <div class="dropdown">Spot ▾</div>
+                </div>
+                
+                <div class="table-labels">
+                    <span>Market</span>
+                    <div class="right-labels">
+                        <span>Price</span>
+                        <span>24H Change</span>
+                    </div>
+                </div>
+
+                <div class="rank-row">
+                    <div class="coin-cell">
+                        <span class="rank gold">1</span>
+                        <div class="icon">B</div> <span class="name">BTC<span class="pair">/USDT</span></span>
+                    </div>
+                    <div class="price-cell">
+                        <span class="price-val">87,015</span>
+                        <span class="change-val green">+0.65%</span>
+                    </div>
+                </div>
+
+                <div class="rank-row">
+                    <div class="coin-cell">
+                        <span class="rank gold">2</span>
+                        <div class="icon grey">M</div>
+                        <span class="name">MON<span class="pair">/USDT</span></span>
+                    </div>
+                    <div class="price-cell">
+                        <span class="price-val">0.01759</span>
+                        <span class="change-val red">-3.03%</span>
+                    </div>
+                </div>
+            </section>
+
+            <section class="rank-column">
+                <div class="column-header">
+                    <h2>Newly Listed</h2>
+                    <div class="dropdown">Spot ▾</div>
+                </div>
+                
+                <div class="table-labels">
+                    <span>Market</span>
+                    <div class="right-labels">
+                        <span>Price</span>
+                        <span>24H Change</span>
+                    </div>
+                </div>
+
+                <div class="rank-row">
+                    <div class="coin-cell">
+                        <span class="rank gold">1</span>
+                        <div class="icon blue">V</div>
+                        <span class="name">VOOI<span class="pair">/USDT</span></span>
+                    </div>
+                    <div class="price-cell">
+                        <span class="price-val">0.05055</span>
+                        <span class="change-val green">+68.50%</span>
+                    </div>
+                </div>
+</body>
+</html>
